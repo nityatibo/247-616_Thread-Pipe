@@ -20,10 +20,10 @@
  */
 int main() {
   system("echo \"processus 1 \""); 
-  system("sleep 10");
-  system("echo \"processus 2 \""); 
-  system("sleep 5");
+  system("sleep 10"); // processus 2
   system("echo \"processus 3 \""); 
+  system("sleep 5"); // processus 4
+  system("echo \"processus 5 \""); 
 
   printf("\n terminé \n");
   return 0;
