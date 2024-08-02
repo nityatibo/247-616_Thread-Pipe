@@ -1,3 +1,5 @@
+#define _XOPEN_SOURCE 800
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
