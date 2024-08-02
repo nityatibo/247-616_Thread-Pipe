@@ -12,11 +12,10 @@
 #include <stdio.h>
 
 /**
- * Ce programme affiche 3 textes, chacun simulant un processus
- * le premier est affiché instantanément, 
- * le second 10 secondes plus tard 
- * et le 3ième après 5 secondes
- * Les trois processus sont exécutés séquentiellement
+ * 
+ *
+ *
+ *
  * @return     0 
  */
 int main() {
