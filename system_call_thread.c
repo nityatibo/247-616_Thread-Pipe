@@ -15,7 +15,7 @@
 /**
  * Ce programme affiche 3 textes, chacun simulant un processus
  * le premier est affiché instantanément, 
- * le 'sleep' de 10 secondes est lancé en arrière plan avec l'argument '&' 
+ * le processus 'sleep' de 10 secondes est lancé en arrière plan avec l'argument '&' 
  * 
  * @return     0 
  */
