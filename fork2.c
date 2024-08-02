@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/wait.h> 
 
 const char* processusPereOuFils;
 
@@ -21,6 +22,7 @@ const char* processusPereOuFils;
 void codeDuProcessusPere(void)
 {
     processusPereOuFils = "Processus Père";
+    sleep(1);
     printf("Je suis %s\n", processusPereOuFils);
 }
 
@@ -29,6 +31,7 @@ void codeDuProcessusPere(void)
 void codeDuProcessusFils(void)
 {
     processusPereOuFils = "Processus Fils";
+    sleep(2);
     printf("Je suis %s\n", processusPereOuFils);
 }
 
@@ -40,9 +43,11 @@ int main()
     pid = fork();
     if (pid == 0) {
         codeDuProcessusFils();
+        printf("Fin du Fils\n");
     }
     else {
         codeDuProcessusPere();
+        printf("Fin du Père\n");
     }
     return 0;
 }
