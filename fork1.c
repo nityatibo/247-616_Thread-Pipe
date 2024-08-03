@@ -1,7 +1,7 @@
 /**
  * @file    fork1.c
  * 
- * @brief   Exemple de code C pour des processus (thread) avec la commande fork, 
+ * @brief   Exemple de code C pour des processus (thread) avec la fonction fork, 
  * 
  * @author  Kevin Cotton
  * @date    2024-08-02
