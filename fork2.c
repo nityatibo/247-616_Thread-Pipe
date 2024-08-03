@@ -1,7 +1,7 @@
 /**
  * @file    fork2.c
  * 
- * @brief   Exemple de code C pour des processus (thread) avec la commande fork, 
+ * @brief   Exemple de code C pour des processus (thread) avec la fonction fork, 
  * 
  * @author  Kevin Cotton
  * @date    2024-08-02
@@ -35,7 +35,7 @@ void codeDuProcessusFils(void)
     printf("Je suis %s\n", processusPereOuFils);
 }
 
-/// @brief Exemple de processus Père/Fils avec la finction 'fork'
+/// @brief Exemple de processus Père/Fils avec la fonction 'fork'
 /// @return 0
 int main() 
 {
