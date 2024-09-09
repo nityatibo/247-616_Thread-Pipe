@@ -22,7 +22,7 @@ const char* processusPereOuFils;
 void codeDuProcessusParent(void)
 {
     processusPereOuFils = "Processus Père";
-    sleep(1);
+    
     printf("Je suis %s\n", processusPereOuFils);
 }
 
@@ -31,7 +31,7 @@ void codeDuProcessusParent(void)
 void codeDuProcessusEnfant(void)
 {
     processusPereOuFils = "Processus Fils";
-    sleep(2);
+    
     printf("Je suis %s\n", processusPereOuFils);
 }
 
@@ -43,10 +43,18 @@ int main()
     pid = fork();
 
     // Appel fonction Enfant
+if (pid == 0)
+{
+codeDuProcessusEnfant();
 
+}
 
     // Appel fonction Parent
-
+else
+{
+codeDuProcessusParent();
+wait(NULL);
+}
     
     return 0;
 }

@@ -12,10 +12,12 @@
 #include <stdio.h>
 
 /**
- * 
- *
- *
- *
+ *affiche "processus 1"
+ *attend 10 seconde
+ *affiche "processus 3"
+ *attend 5 seconde
+ *affiche "processus 5"
+ *affiche "Terminer"
  * @return     0 
  */
 int main() {
