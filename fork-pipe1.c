@@ -30,8 +30,7 @@ int main() {
 
     // Créer un processus enfant
     pid = fork();
-    if (pid == -1) {
-        // Une erreur s'est produite
+    if (pid == -1) { // Une erreur s'est produite
         perror("fork");
         return -1;
     }
@@ -45,7 +44,7 @@ int main() {
         close(pipefd[0]); // Fermer l'extrémité de lecture après avoir lu
     } 
     else {  // Code exécuté par le processus ?? A COMPLÉTER
-        close(pipefd[0]);  // Fermer l'extrémité de lecture dans le processus ??
+        close(pipefd[0]);  // Fermer l'extrémité de lecture dans le processus ?? A COMPLÉTER
         const char *msg = "Allo cher enfant\n";
         write(pipefd[1], msg, strlen(msg));
         close(pipefd[1]);  // Fermer l'extrémité d'écriture après avoir écrit
