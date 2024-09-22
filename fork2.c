@@ -28,7 +28,7 @@ void codeDuProcessusParent(void)
 
 /// @brief Code exécuté par le processus Fils
 /// @param aucun
-void codeDuProcessusFils(void)
+void codeDuProcessusEnfant(void)
 {
     processusPereOuFils = "Processus Fils";
     sleep(2);
